@@ -66,17 +66,17 @@ int main(){
     int i3 = 0;
    
     while (total1 > 0 && total2 > 0 && total3 > 0) {
-        if (total1 > total2 && total1 > total3) {
+        if (total1 >= total2 && total1 >= total3) {
             total1 -= h1[i1];
 
             i1++;
         }
-        else if (total2 > total1 && total2 > total3) {    
+        else if (total2 >= total1 && total2 >= total3) {    
             total2 -= h2[i2];
                 
             i2++;
        }
-       else if (total3 > total2 && total3 > total1) {
+       else if (total3 >= total2 && total3 >= total1) {
             total3 -= h3[i3];
                 
             i3++;
@@ -91,4 +91,4 @@ int main(){
     cout << "0";
         
     return 0;
-}  
+} 
